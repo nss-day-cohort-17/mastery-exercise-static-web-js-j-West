@@ -11,9 +11,14 @@ function growThatTree() {
   heightInput = document.querySelectorAll("input")[0].value;
   keyInput = document.querySelectorAll("input")[1].value;
 
-  console.log(heightInput);
-  console.log(keyInput);
-}
+  if (heightInput !== "" && keyInput !== "") {
 
+
+    console.log(heightInput);
+    console.log(keyInput);
+  } else {
+      alert("Both input fields must have a value!");
+  }
+}
 
 btn.addEventListener("click", growThatTree)
