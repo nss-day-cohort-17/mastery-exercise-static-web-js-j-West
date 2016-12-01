@@ -24,3 +24,14 @@ function growThatTree() {
 }
 
 btn.addEventListener("click", growThatTree)
+input1.addEventListener("keydown", function(e) {
+  if (e.keyCode === 13) {
+    growThatTree();
+  }
+})
+
+input2.addEventListener("keydown", function(e) {
+  if (e.keyCode === 13) {
+    growThatTree();
+  }
+})
