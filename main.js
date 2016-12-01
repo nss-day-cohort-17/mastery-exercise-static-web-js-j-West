@@ -2,6 +2,11 @@ var btn = document.querySelector("button");
 var heightInput;
 var keyInput;
 
-console.log(heightInput);
-console.log(keyInput);
-console.log(btn);
+btn.addEventListener("click", function() {
+  heightInput = document.querySelectorAll("input")[0].value;
+  keyInput = document.querySelectorAll("input")[1].value;
+
+  console.log(heightInput);
+  console.log(keyInput);
+
+})
