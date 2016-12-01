@@ -5,7 +5,7 @@ var heightInput;
 var keyInput;
 
 var treeSpecs = {
-                  "Height" : 0,
+                  "height" : 0,
                   "buildKey" : 0
 }
 
@@ -14,10 +14,10 @@ function growThatTree() {
   keyInput = input2.value;
 
   if (heightInput !== "" && keyInput !== "") {
+    treeSpecs.height = heightInput;
+    treeSpecs.buildKey = keyInput;
+    console.log(treeSpecs);
 
-
-    console.log(heightInput);
-    console.log(keyInput);
   } else {
       alert("Both input fields must have a value!");
   }
