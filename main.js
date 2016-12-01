@@ -1,4 +1,6 @@
 var btn = document.querySelector("button");
+var input1 = document.querySelectorAll("input")[0];
+var input2 = document.querySelectorAll("input")[1];
 var heightInput;
 var keyInput;
 
@@ -8,8 +10,8 @@ var treeSpecs = {
 }
 
 function growThatTree() {
-  heightInput = document.querySelectorAll("input")[0].value;
-  keyInput = document.querySelectorAll("input")[1].value;
+  heightInput = input1.value;
+  keyInput = input2.value;
 
   if (heightInput !== "" && keyInput !== "") {
 
