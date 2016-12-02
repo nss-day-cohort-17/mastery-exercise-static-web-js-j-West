@@ -10,24 +10,25 @@ var treeSpecs = {
                   "buildKey" : 0
 }
 
-function growThatTree() {
-  heightInput = input1.value;
-  keyInput = input2.value;
+function growThatTree(obj) {
 
-  if (heightInput !== "" && keyInput !== "") {
-    treeSpecs.height = heightInput;
-    treeSpecs.buildKey = keyInput;
-    console.log(treeSpecs);
+  console.log(treeSpecs);
+  for (var i = 1; i <= obj.height; i++) {
+    console.log();
 
-  } else {
-      alert("Both input fields must have a value!");
   }
 }
 
-btn.addEventListener("click", growThatTree)
-input1.addEventListener("keydown", function(e) {
-  if (e.keyCode === 13) {
-    growThatTree();
+  function checkInput() {
+    heightInput = input1.value;
+    keyInput = input2.value;
+      if (heightInput === "" || keyInput === "") {
+        alert("Both input fields must have a value!");
+        return false;
+    }
+    treeSpecs.height = heightInput;
+    treeSpecs.buildKey = keyInput;
+    return true;
   }
 })
 
