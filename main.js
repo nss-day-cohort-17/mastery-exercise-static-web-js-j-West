@@ -30,10 +30,22 @@ function growThatTree(obj) {
     treeSpecs.buildKey = keyInput;
     return true;
   }
+
+
+btn.addEventListener("click", function() {
+  if(checkInput())
+  growThatTree(treeSpecs);
+});
+
+input1.addEventListener("keydown", function(e) {
+  if (e.keyCode === 13)
+    if(checkInput())
+      growThatTree(treeSpecs);
 })
 
 input2.addEventListener("keydown", function(e) {
-  if (e.keyCode === 13) {
-    growThatTree();
-  }
+  if (e.keyCode === 13)
+    if(checkInput())
+      growThatTree(treeSpecs);
+
 })
