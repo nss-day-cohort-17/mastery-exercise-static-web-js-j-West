@@ -2,7 +2,6 @@ var btn = document.querySelector("button");
 var input1 = document.querySelectorAll("input")[0];
 var input2 = document.querySelectorAll("input")[1];
 var spacer;
-var tempKey;
 
 var treeSpecs = {
                   "height" : 0,
@@ -10,10 +9,8 @@ var treeSpecs = {
 }
 
 function growThatTree(obj) {
-  tempKey = obj.buildKey;
   for (var i = 1; i <= obj.height; i++) {
-    console.log(spacer.repeat(obj.height - i) + obj.buildKey);
-    obj.buildKey += tempKey.repeat(2);
+    console.log(spacer.repeat(obj.height - i) + obj.buildKey + obj.buildKey.repeat((i -1) * 2));
   }
 }
 
