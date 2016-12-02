@@ -10,11 +10,10 @@ var treeSpecs = {
 }
 
 function growThatTree(obj) {
-
-  console.log(treeSpecs);
+  tempKey = obj.buildKey;
   for (var i = 1; i <= obj.height; i++) {
-    console.log();
-
+    console.log(spacer.repeat(obj.height - i) + obj.buildKey);
+    obj.buildKey += tempKey.repeat(2);
   }
 }
 
