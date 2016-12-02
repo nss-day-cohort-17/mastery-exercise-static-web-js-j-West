@@ -3,6 +3,7 @@ var input1 = document.querySelectorAll("input")[0];
 var input2 = document.querySelectorAll("input")[1];
 var heightInput;
 var keyInput;
+var spacer = " ";
 
 var treeSpecs = {
                   "height" : 0,
