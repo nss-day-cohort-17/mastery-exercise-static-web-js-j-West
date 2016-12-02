@@ -1,9 +1,8 @@
 var btn = document.querySelector("button");
 var input1 = document.querySelectorAll("input")[0];
 var input2 = document.querySelectorAll("input")[1];
-var heightInput;
-var keyInput;
-var spacer = " ";
+var spacer;
+var tempKey;
 
 var treeSpecs = {
                   "height" : 0,
@@ -26,8 +25,7 @@ function growThatTree(obj) {
         alert("Both input fields must have a value!");
         return false;
     }
-    treeSpecs.height = heightInput;
-    treeSpecs.buildKey = keyInput;
+    spacer = " ";
     return true;
   }
 
