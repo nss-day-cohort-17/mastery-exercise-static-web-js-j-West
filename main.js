@@ -18,9 +18,9 @@ function growThatTree(obj) {
 }
 
   function checkInput() {
-    heightInput = input1.value;
-    keyInput = input2.value;
-      if (heightInput === "" || keyInput === "") {
+    treeSpecs.height = input1.value;
+    treeSpecs.buildKey = input2.value;
+      if (treeSpecs.height === "" || treeSpecs.buildKey === "") {
         alert("Both input fields must have a value!");
         return false;
     }
