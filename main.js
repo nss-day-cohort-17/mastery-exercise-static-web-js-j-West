@@ -17,8 +17,8 @@ function growThatTree(obj) {
   function checkInput() {
     treeSpecs.height = input1.value;
     treeSpecs.buildKey = input2.value;
-      if (treeSpecs.height === "" || treeSpecs.buildKey === "") {
-        alert("Both input fields must have a value!");
+    if (treeSpecs.height === "" || treeSpecs.buildKey === "" || treeSpecs.buildKey.length !== 1) {
+      alert("Both input fields must have a value, and only one character!");
         return false;
     }
     spacer = " ";
